@@ -19,7 +19,7 @@ Skills
 - Tableau – Data Visualization, Calculated Fields, Dashboards
 - Machine Learning – Data Preprocessing, Classification, Model Evaluation
 
-## Projects
+Projects
 
 1. 📊 [Excel – Loan Analysis Dashboard](./Excel/)
    
@@ -51,7 +51,7 @@ Services
 
 Contact
 
-📧 [Email](mailto:jeevankrishna48@gmail.com)
+📧 [jeevankrishna48@gmail.com](mailto:jeevankrishna48@gmail.com)
 
 💼 [LinkedIn](https://www.linkedin.com/in/jeevan-v-c)
 

@@ -51,10 +51,8 @@ Services
 
 Contact
 
-📧 Email: jeevankrishna48@gmail.com
+📧 [Email](mailto:jeevankrishna48@gmail.com)
 
-📱 Phone: 9345699075
+💼 [LinkedIn](https://www.linkedin.com/in/jeevan-v-c)
 
-💼 LinkedIn: www.linkedin.com/in/jeevan-v-c
-
-🐙 GitHub: github.com/Jeevan1330
+🐙 [GitHub](https://github.com/Jeevan1330)

@@ -19,27 +19,27 @@ Skills
 - Tableau – Data Visualization, Calculated Fields, Dashboards
 - Machine Learning – Data Preprocessing, Classification, Model Evaluation
 
-Projects
+## Projects
 
-1. 📊 Excel – Loan Analysis Dashboard
+1. 📊 [Excel – Loan Analysis Dashboard](./Excel/)
+   
+   Analyzed loan data and developed an Excel dashboard to understand loan applications, approvals, and overall loan performance.
 
-Analyzed loan data and developed an Excel dashboard to understand loan applications, approvals, and overall loan performance.
+2. 🟣 [SQL – Online Movie Ticket Booking Analysis](./SQL/)
+   
+   Analyzed movie booking data to identify revenue trends, popular movies, city-wise performance, theatre performance, and customer booking patterns using MySQL.
 
-2. 🗄️ SQL – Online Movie Ticket Booking Analysis
+3. 📈 [Power BI – DMart Sales Analysis](./PowerBI/)
+   
+   Built an interactive Power BI dashboard to analyze sales, profit, profit margin, growth, products, and overall business performance using Power Query and DAX.
 
-Analyzed movie booking data to identify revenue trends, popular movies, city-wise performance, theatre performance, and customer booking patterns using MySQL.
+4. 📊 [Tableau – HR Analytics Dashboard](./Tableau/)
+   
+   Created an interactive HR dashboard to analyze employee data, workforce trends, and key HR metrics using Tableau.
 
-3. 📈 Power BI – DMart Sales Analysis
-
-Built an interactive Power BI dashboard to analyze sales, profit, profit margin, growth, products, and overall business performance using Power Query and DAX.
-
-4. 📊 Tableau – HR Analytics Dashboard
-
-Created an interactive HR dashboard to analyze employee data, workforce trends, and key HR metrics using Tableau.
-
-5. 🤖 Machine Learning – Customer Churn Prediction
-
-Built a classification model to predict customer churn using Python, Pandas, Scikit-learn, and XGBoost. Performed data preprocessing, feature encoding, model training, tuning, and evaluation.
+5. 🤖 [Machine Learning – Customer Churn Prediction](./Machine-Learning/)
+   
+   Built a classification model to predict customer churn using Python, Pandas, Scikit-learn, and XGBoost. Performed data preprocessing, feature encoding, model training, tuning, and evaluation.
 
 Services
 

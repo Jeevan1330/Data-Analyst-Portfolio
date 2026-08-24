@@ -28,4 +28,4 @@ Dashboard
 
 Project File
 
-[Download Power BI Dashboard](dmartsalesnalysis.pbix)
+[Download Power BI Dashboard](https://github.com/Jeevan1330/Data-Analyst-Portfolio/raw/refs/heads/main/PowerBI/dmartsalesnalysis.pbix)

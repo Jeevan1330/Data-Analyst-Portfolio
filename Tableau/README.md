@@ -27,6 +27,4 @@ Dashboard
 
 Project File
 
-Project File
-
 [Download Tableau Packaged Workbook](HR_Analytics_Dashboard.twbx)

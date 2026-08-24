@@ -27,4 +27,6 @@ Dashboard
 
 Project File
 
-[Download Tableau Project](https://github.com/Jeevan1330/Data-Analyst-Portfolio/raw/refs/heads/main/Tableau/hr%20tableau%20project.twb?download=1)
+Project File
+
+[Download Tableau Packaged Workbook](HR_Analytics_Dashboard.twbx)

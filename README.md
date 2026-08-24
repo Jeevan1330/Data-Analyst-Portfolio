@@ -51,8 +51,8 @@ Services
 
 Contact
 
-📧 [jeevankrishna48@gmail.com](mailto:jeevankrishna48@gmail.com)
+📧 Gmail - [jeevankrishna48@gmail.com](mailto:jeevankrishna48@gmail.com)
 
-💼 [LinkedIn](https://www.linkedin.com/in/jeevan-v-c)
+💼 LinkedIn - [linkedin.com/in/jeevan-v-c](https://www.linkedin.com/in/jeevan-v-c)
 
-🐙 [GitHub](https://github.com/Jeevan1330)
+🐙 GitHub - [github.com/Jeevan1330](https://github.com/Jeevan1330)

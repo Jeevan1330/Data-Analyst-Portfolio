@@ -24,7 +24,7 @@ Key Analysis
 
 Dashboard
 
-![DMart Sales Dashboard](Dashboard.png.jpeg)
+![DMart Sales Dashboard](dmartsalesanalysis%20dashboard%20srennshot.jpeg)
 
 Project File
 

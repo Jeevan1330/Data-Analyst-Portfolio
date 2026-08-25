@@ -60,7 +60,7 @@ Projects
 
 Analyzed loan data and developed an Excel dashboard to understand loan applications, approvals, and overall loan performance.
 
-![Loan Analysis Dashboard](./Excel/Dashboard_screenshot.png)
+![Loan Analysis Dashboard](./Excel/Dashboard_screenshot.png.jpeg)
 
 2. 🟣 [SQL – Online Movie Ticket Booking Analysis](./SQL/)
 

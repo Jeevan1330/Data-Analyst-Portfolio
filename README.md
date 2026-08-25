@@ -49,6 +49,10 @@ Services
 - 🐍 Python Data Cleaning & Analysis
 - 📋 Business Reports & Data Visualization
 
+Resume
+
+📄 [Download Resume](./Jeevan_V_C_Resume.pdf)
+
 Contact
 
 📧 Gmail - [jeevankrishna48@gmail.com](mailto:jeevankrishna48@gmail.com)

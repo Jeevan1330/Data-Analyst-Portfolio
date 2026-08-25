@@ -57,12 +57,14 @@ Skills
 Projects
 
 1. 📊 [Excel – Loan Analysis Dashboard](./Excel/)
-   
-   Analyzed loan data and developed an Excel dashboard to understand loan applications, approvals, and overall loan performance.
+
+Analyzed loan data and developed an Excel dashboard to understand loan applications, approvals, and overall loan performance.
+
+![Loan Analysis Dashboard](./Excel/Dashboard_screenshot.png)
 
 2. 🟣 [SQL – Online Movie Ticket Booking Analysis](./SQL/)
-   
-   Analyzed movie booking data to identify revenue trends, popular movies, city-wise performance, theatre performance, and customer booking patterns using MySQL.
+
+Analyzed movie booking data to identify revenue trends, popular movies, city-wise performance, theatre performance, and customer booking patterns using MySQL.
 
 3. 📈 [Power BI – DMart Sales Analysis](./PowerBI/)
 
@@ -71,12 +73,14 @@ Built an interactive Power BI dashboard to analyze sales, profit, profit margin,
 ![DMart Sales Dashboard](./PowerBI/dmartsalesanalysis%20dashboard%20srennshot.jpeg)
 
 4. 📊 [Tableau – HR Analytics Dashboard](./Tableau/)
-   
-   Created an interactive HR dashboard to analyze employee data, workforce trends, and key HR metrics using Tableau.
+
+Created an interactive HR dashboard to analyze employee data, workforce trends, and key HR metrics using Tableau.
+
+![HR Analytics Dashboard](./Tableau/Dashboard_tableau.png.jpeg)
 
 5. 🤖 [Machine Learning – Customer Churn Prediction](./Machine-Learning/)
-   
-   Built a classification model to predict customer churn using Python, Pandas, Scikit-learn, and XGBoost. Performed data preprocessing, feature encoding, model training, tuning, and evaluation.
+
+Built a classification model to predict customer churn using Python, Pandas, Scikit-learn, and XGBoost. Performed data preprocessing, feature encoding, model training, tuning, and evaluation.
 
 Services
 

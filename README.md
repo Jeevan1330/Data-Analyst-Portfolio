@@ -51,7 +51,7 @@ Services
 
 Resume
 
-📄 [Download Resume](./jeevan_Data_Analyst.pdf)
+📄 [View / Download Resume](./jeevan_Data_Analyst.pdf)
 
 Contact
 

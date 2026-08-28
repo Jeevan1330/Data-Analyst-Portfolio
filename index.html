@@ -1,1 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Jeevan | Data Analyst Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7fb;
+    color:#172033;
+    line-height:1.6;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid #ddd;
+    padding:16px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:700;
+    color:#1264d8;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:#172033;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#1264d8;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(135deg,#eaf3ff,#ffffff);
+}
+
+.hero h1{
+    font-size:clamp(42px,7vw,75px);
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:#1264d8;
+}
+
+.hero h2{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    color:#5b6575;
+    font-size:18px;
+}
+
+.buttons{
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:13px 25px;
+    margin:7px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.primary{
+    background:#1264d8;
+    color:white;
+}
+
+.secondary{
+    border:2px solid #1264d8;
+    color:#1264d8;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:45px;
+}
+
+.about{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    color:#5b6575;
+    font-size:18px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-top:30px;
+}
+
+.skill{
+    background:white;
+    padding:12px 22px;
+    border-radius:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,.07);
+    font-weight:bold;
+}
+
+.filters{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.filter-btn{
+    padding:10px 18px;
+    border:1px solid #1264d8;
+    background:white;
+    color:#1264d8;
+    border-radius:20px;
+    margin:5px;
+    cursor:pointer;
+}
+
+.filter-btn.active,
+.filter-btn:hover{
+    background:#1264d8;
+    color:white;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:28px;
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 40px rgba(0,0,0,.13);
+}
+
+.card-icon{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#687386;
+    margin-bottom:20px;
+}
+
+.card a{
+    color:#1264d8;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.service{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.07);
+}
+
+.service h3{
+    margin:15px 0 8px;
+}
+
+.service p{
+    color:#687386;
+}
+
+.contact{
+    text-align:center;
+    background:#101828;
+    color:white;
+}
+
+.contact p{
+    color:#c8d0dc;
+    margin:10px 0;
+}
+
+.contact a{
+    color:#65a5ff;
+    text-decoration:none;
+}
+
+footer{
+    background:#0b1220;
+    color:#9da8b8;
+    text-align:center;
+    padding:20px;
+}
+
+#topBtn{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:45px;
+    height:45px;
+    border:0;
+    border-radius:50%;
+    background:#1264d8;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    display:none;
+}
+
+@media(max-width:700px){
+
+    nav{
+        padding:15px 5%;
+    }
+
+    nav ul{
+        gap:10px;
+        font-size:13px;
+    }
+
+    section{
+        padding:60px 5%;
+    }
+
+    .hero{
+        min-height:80vh;
+    }
+
+    .hero h2{
+        font-size:22px;
+    }
+
+    .section-title{
+        font-size:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Jeevan V C</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+    <div>
+        <h1>Hi, I'm <span>Jeevan</span></h1>
+
+        <h2>Data Analyst</h2>
+
+        <p>
+            I transform raw business data into meaningful insights,
+            reports and interactive dashboards using Excel, SQL,
+            Power BI, Tableau and Python.
+        </p>
+
+        <div class="buttons">
+            <a href="#projects" class="btn primary">View My Projects</a>
+
+            <a href="#contact" class="btn secondary">Let's Work Together</a>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+
+        <p>
+            I am Jeevan V C, a B.Sc. Data Science student based in Chennai,
+            with practical experience in data analysis and visualization.
+            I enjoy working with business data and turning it into
+            clear and actionable insights.
+        </p>
+
+        <div class="skills">
+            <div class="skill">Excel</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Power BI</div>
+            <div class="skill">Tableau</div>
+            <div class="skill">Python</div>
+            <div class="skill">Data Cleaning</div>
+            <div class="skill">Data Visualization</div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="projects">
+
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="filters">
+
+        <button class="filter-btn active" onclick="filterProjects('all',this)">
+            All
+        </button>
+
+        <button class="filter-btn" onclick="filterProjects('excel',this)">
+            Excel
+        </button>
+
+        <button class="filter-btn" onclick="filterProjects('sql',this)">
+            SQL
+        </button>
+
+        <button class="filter-btn" onclick="filterProjects('powerbi',this)">
+            Power BI
+        </button>
+
+        <button class="filter-btn" onclick="filterProjects('tableau',this)">
+            Tableau
+        </button>
+
+        <button class="filter-btn" onclick="filterProjects('ml',this)">
+            Machine Learning
+        </button>
+
+    </div>
+
+    <div class="projects">
+
+        <div class="card project excel">
+            <div class="card-icon">📊</div>
+            <h3>Loan Approval Analysis</h3>
+            <p>
+                Excel-based analysis and dashboard to understand
+                loan approval patterns and applicant information.
+            </p>
+            <a href="Excel/" target="_blank">View Project →</a>
+        </div>
+
+        <div class="card project sql">
+            <div class="card-icon">🗄️</div>
+            <h3>Online Movie Ticket Booking</h3>
+            <p>
+                SQL project focused on querying data and extracting
+                useful business insights.
+            </p>
+            <a href="SQL/" target="_blank">View Project →</a>
+        </div>
+
+        <div class="card project powerbi">
+            <div class="card-icon">📈</div>
+            <h3>DMart Sales Analysis</h3>
+            <p>
+                Interactive Power BI dashboard analyzing sales,
+                customers, products and business performance.
+            </p>
+            <a href="PowerBI/" target="_blank">View Project →</a>
+        </div>
+
+        <div class="card project tableau">
+            <div class="card-icon">📉</div>
+            <h3>HR Analytics Dashboard</h3>
+            <p>
+                Tableau dashboard analyzing employee count,
+                attrition, demographics and HR metrics.
+            </p>
+            <a href="Tableau/" target="_blank">View Project →</a>
+        </div>
+
+        <div class="card project ml">
+            <div class="card-icon">🤖</div>
+            <h3>Customer Churn Prediction</h3>
+            <p>
+                Machine Learning project focused on predicting
+                customer churn using data analysis and ML techniques.
+            </p>
+            <a href="Machine-Learning/" target="_blank">View Project →</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="services">
+
+    <h2 class="section-title">Services</h2>
+
+    <div class="services">
+
+        <div class="service">
+            <div class="card-icon">🧹</div>
+            <h3>Excel Data Cleaning</h3>
+            <p>
+                Clean, organize and prepare business datasets
+                for analysis.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="card-icon">📊</div>
+            <h3>Data Analysis</h3>
+            <p>
+                Analyze business data and identify useful trends
+                and insights.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="card-icon">📈</div>
+            <h3>Power BI Dashboards</h3>
+            <p>
+                Create interactive dashboards for sales,
+                inventory and business reporting.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="card-icon">🗄️</div>
+            <h3>SQL Analysis</h3>
+            <p>
+                Query databases and generate meaningful
+                business insights.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="card-icon">📋</div>
+            <h3>Business Reporting</h3>
+            <p>
+                Turn raw data into simple and understandable
+                reports.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2 class="section-title">Let's Work Together</h2>
+
+    <p>
+        Have business data that needs cleaning, analysis or visualization?
+    </p>
+
+    <p>
+        📧
+        <a href="mailto:jeevankrishna48@gmail.com">
+            jeevankrishna48@gmail.com
+        </a>
+    </p>
+
+    <div class="buttons">
+
+        <a
+        href="https://www.linkedin.com/"
+        target="_blank"
+        class="btn primary">
+        LinkedIn
+        </a>
+
+        <a
+        href="https://github.com/Jeevan1330"
+        target="_blank"
+        class="btn secondary">
+        GitHub
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Jeevan V C | Data Analyst Portfolio
+</footer>
+
+<button id="topBtn" onclick="window.scrollTo(0,0)">
+    ↑
+</button>
+
+<script>
+
+function filterProjects(category,button){
+
+    const projects = document.querySelectorAll(".project");
+    const buttons = document.querySelectorAll(".filter-btn");
+
+    buttons.forEach(btn => btn.classList.remove("active"));
+
+    button.classList.add("active");
+
+    projects.forEach(project => {
+
+        if(category === "all" ||
+           project.classList.contains(category)){
+
+            project.style.display = "block";
+
+        }else{
+
+            project.style.display = "none";
+
+        }
+
+    });
+}
+
+window.addEventListener("scroll",function(){
+
+    const topBtn = document.getElementById("topBtn");
+
+    if(window.scrollY > 400){
+        topBtn.style.display = "block";
+    }else{
+        topBtn.style.display = "none";
+    }
+
+});
+
+</script>
+
+</body>
+</html>
